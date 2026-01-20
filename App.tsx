@@ -1,13 +1,13 @@
 import React from 'react';
 import { HashRouter, Routes, Route, Navigate } from 'react-router-dom';
-import { AuthProvider, useAuth } from './context/AuthContext';
-import { NotificationProvider } from './context/NotificationContext';
-import Layout from './components/Layout';
-import Landing from './pages/Landing';
-import Login from './pages/Login';
-import Dashboard from './pages/Dashboard';
-import Analytics from './pages/Analytics';
-import Profile from './pages/Profile';
+import { AuthProvider, useAuth } from './context/AuthContext.tsx';
+import { NotificationProvider } from './context/NotificationContext.tsx';
+import Layout from './components/Layout.tsx';
+import Landing from './pages/Landing.tsx';
+import Login from './pages/Login.tsx';
+import Dashboard from './pages/Dashboard.tsx';
+import Analytics from './pages/Analytics.tsx';
+import Profile from './pages/Profile.tsx';
 
 const ProtectedRoute = ({ children }: { children: React.ReactNode }) => {
   const { isAuthenticated } = useAuth();
